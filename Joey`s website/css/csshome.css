@@ -1,0 +1,75 @@
+body{
+	padding-top: 50px;
+}
+.container{
+	margin-top: 20px;
+}
+.welcomepic{
+	/*background: url("../pics/me/2.jpg");*/
+	text-align: center;
+}
+.welcomepic h1{
+	color: white;
+    position: absolute;
+    top:100px;
+    width: 100%;
+    margin:0 auto;
+}
+.welcomepic p{
+    color: white;
+    position: absolute;
+    top:140px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.aboutme-hover{
+	text-align: center;
+	display: block;
+	overflow: hidden;
+}
+.aboutme-hover img{
+	position: relative;
+	width: 100%;
+	top: 0;    
+    left: 0;    
+    border: 0;
+}
+.aboutme-hover .caption{  
+   position:absolute;  
+   background:#000;  
+   color:#fff;  
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  /* IE 8 */   
+   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);  /* IE 5-7 */  
+   -moz-opacity:0.8;  /* old mozilla  */  
+   -khtml-opacity: 0.8;   /* old safari */     
+   opacity: 0.8;   /* modern browsers */  
+   width:100%;   
+   height: 600px;  
+   top:-600px; 
+   left:0px; 
+   width:100%;  
+}  
+.aboutme-hover .caption a  
+{   
+   font-size:11px;  
+   color:#FFF;  
+   background-color:#0398CF;  
+   text-decoration:none;  
+   padding:7px;  
+   -webkit-border-radius: 5px;  
+   -moz-border-radius: 5px;  
+   border-radius: 5px;  
+   margin:0 10px;   
+}  
+footer hr,.resumecontent hr{
+	border-color: black;
+}
+footer hr{
+	width: 90%;
+}
+.navbar{
+  opacity: 0.85;
+}
+
+

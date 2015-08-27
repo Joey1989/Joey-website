@@ -1,0 +1,8 @@
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height:600px;
+    width: 800px;
+}
+.navbar{
+  opacity: 0.85;
+}

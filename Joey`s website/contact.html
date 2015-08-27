@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Joey`s contact</title>
+   
+   
+   <link href="css/mycontact.css" rel="stylesheet" type="text/css">
+		<!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+   <script type="text/javascript" src="https://www.google.com/maps/@37.3714619,-121.764741,13z"></script>
+  
+   <style >
+     #map{
+      width:800px;
+      height:500px;
+     }
+     #map2{
+      text-align: center;
+      padding-top: 40px;
+     }
+     #weather{
+       text-align: center;
+     }
+     hr{
+      width:90%;
+      border-color: black;
+     }
+   </style>
+
+      <!--the icon "J"-->
+   <link rel="icon" 
+      type="image/ico" 
+      href="newicon.ico">
+
+      
+</head>
+
+    <style>
+    body{
+    	padding-top:30px;
+    }
+    </style>
+
+<body background="pics/backgroundpic.jpeg" onload="showMap()">
+
+  <!-- <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar"> 
+   <div class="container">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse"data-target="#navbar-collapse">
+       	  <span class="icon-bar"></span>
+       	  <span class="icon-bar"></span>
+       	  <span class="icon-bar"></span>
+       	  <span class="icon-bar"></span>
+       </button>
+       
+       <a href="" class="navbar-brand">Joey</a>
+     </div>
+     <div class="collapse navbar-collapse" id="navbar-collapse">
+      
+     <a href="" class="btn btn-info navbar-btn navbar-right">Download</a>
+        <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a>
+          <li><a href="myprojects.html">My projects</a>
+          <li><a href="myphotoes.html">My photoes</a>
+           <li><a href="resume.html">My resume</a>
+          <li><a href="#Addme">Add me</a>
+          <li><a href="contact.html">Contact me</a>
+        </ul>
+     </div>
+   </div>
+  </nav>-->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                         
+        </button>
+        <a class="navbar-brand" href="#">Joey</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My photoes
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="myphotoes.html#boston">Boston</a></li>
+              <li><a href="myphotoes.html#newyork">New York</a></li>
+              <li><a href="myphotoes.html#orlando">Orlando</a></li> 
+            </ul>
+          </li>
+          
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My projects
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="myprojects.html#Antenna">Antenna</a></li>
+              <li><a href="myprojects.html#Seismic">Seismic</a></li>
+            </ul>
+          </li>
+          <li><a href="resume.html">My resume</a>
+          <li><a href="#Addme">Add me</a>
+          <li><a href="contact.html">Contact me</a>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<hr>
+<div id="weather">
+    <iframe id="forecast_embed" type="text/html" frameborder="0" height="220" width="90%" src="http://forecast.io/embed/#lat=37.357264&lon=-122.015190&name=Sunnyvale"> </iframe>
+</div>
+
+<div class="container">
+  <section>
+    <div class="jumbotron">
+      <h2>My contact info:</h2>
+      <div id="contactinfo">
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td>Tel</td>
+              <td>(716)495-1250</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>zhiyiliu1989@yahoo.com</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Address</td>
+              <td rowspan="2">1066 Sunnyvale Saratoga Rd<br>Sunnyvale, CA, 94087</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="map2" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.359700390263!2d-122.03200479999997!3d37.357664899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb67939612b17%3A0x86899219295ad178!2s1066+Sunnyvale+Saratoga+Rd%2C+Sunnyvale%2C+CA+94087!5e0!3m2!1sen!2sus!4v1433391137579" width="80%" height="400" frameborder="0" style="border:0" id="mapframe" name="mapframe" onload="setSize()"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+<!--<script type="text/javascript">
+function setSize('mapframe'){
+var myIFrame = parent.document.getElementById('mapframe');
+var w=myIFrame.style.width;
+myIFrame.style.height = w;
+}
+</script>-->
+
+<hr>
+
+ <!-- addme>-->
+    <div class="container">
+      <section>
+        <div class="page-header" id="Addme">
+          <div class="jumbotron">
+            <div class="container text-center">
+              <h1 >Wanna be my friend ?</h1>
+              <p>on Twitter, Facebook or LinkedIn?</p>
+              <p>Awesome! Click the buttons :-)</p>
+              <div class="btn-group" >
+                <a href="https://twitter.com/joey_zhiyi" class="btn btn-lg btn btn-success " id="Twitter" >Twitter</a>
+                <a href="https://www.facebook.com/zhiyi.liu.904" class="btn btn-lg btn btn-warning " id="Facebook" >Facebook</a>
+                <a href="https://www.linkedin.com/profile/view?id=325883792" class="btn btn-lg btn btn-info " id="LinkedIn" >LinkedIn</a>
+                </div>
+            </div>
+          </div><!--end of jumbotron-->
+        </div>
+      </section>
+    </div><!--end of container-->
+
+
+<footer>
+    <hr>
+    <div class="container text-center">
+        <h3>Subscribe for more free stuff</h3>
+        <p>Enter your name and email</p>
+
+        <form action="" class="form-inline">
+            <div class="form-group">
+                <label for="subscription">Subscribe</label>
+                <input type="text" class="form-control" id="subscription" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+            </div>
+            <button type="submit" class="btn btn-info">Subscribe</button> 
+        </form>
+
+        <hr>
+        <ul class="list-inline">
+            <li><a href="https://twitter.com/joey_zhiyi">Twitter</a></li>
+            <li><a href="https://www.facebook.com/zhiyi.liu.904">Facebook</a></li>
+            <li><a href="http://www.youtube.com/wiredwiki">YouTube</a></li>
+        </ul>
+        <p>&copy; Joey Liu @2015</p>
+    </div><!-- end Container-->
+</footer>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+</html>

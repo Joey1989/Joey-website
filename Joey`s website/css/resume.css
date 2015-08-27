@@ -1,0 +1,112 @@
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+
+
+/*@media screen and (min-width: 768px) {
+
+}*/
+
+body {
+ padding-top:50px;
+}
+
+.header{
+  text-align: center;
+  line-height: 90%;
+  font-size: 100%;
+}
+.header #header-name{
+  font-weight: bold;
+  font-size: 150%;
+}
+.address{
+  font-weight: bold;
+  line-height: 20%;
+}
+.title{
+  font-weight: bold;
+  font-size: 120%;
+}
+.subtitle{
+  font-weight: bold;
+  font-size: 100%;
+}
+.resumecontent{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+footer hr,.resumecontent hr{
+  border-color: black;
+}
+footer hr{
+  width: 90%;
+}
+.navbar{
+  opacity: 0.85;
+}
+
+----------------------------
+#masthead { 
+ min-height:250px;
+}
+
+#masthead h1 {
+ font-size: 30px;
+ line-height: 1;
+ padding-top:20px;
+}
+
+#masthead .well {
+ margin-top:8%;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;/*228px*/
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:20%;
+  }
+}
+
+#sidebar a:hover{
+  background-color: #ccccee;
+}
+
+#sidebar li.active {
+  border:1 #ccccee solid;
+  border-right-width:0px;
+}
+
+
+
+

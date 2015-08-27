@@ -1,0 +1,16 @@
+.carousel-inner > .item > img {
+    margin: 0 auto;
+     width: auto;
+     max-height: 1600px;
+  height: 600px;
+  max-height: 600px;
+}
+
+footer hr{
+	border-color: black;
+	width: 90%;
+}
+.navbar{
+  opacity: 0.85;
+}
+
